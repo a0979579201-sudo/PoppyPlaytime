@@ -1,0 +1,92 @@
+/* 1. 頁面整體設定 */
+body {
+    background-color: #121212;  /* 背景顏色 */ 
+    color: #e0e0e0;            /* 文字顏色 */
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    margin: 0;
+    padding: 30px 20px;        /* 調整上下留白，避免在手機上太大 */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 650px;
+    width: 100%;
+}
+
+/* 2. 標題與文字 */
+h1 {
+    color: #FF0000;            
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888888;
+    margin-bottom: 25px;
+}
+
+/* 3. 卡片外框 */
+.card {
+    background-color: #1e1e1e; 
+    padding: 20px;
+    border-radius: 8px;        
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 40px; /* 讓卡片內部底端多出 40 像素的留白 */ 
+}
+
+.card.highlight {
+    border: 2px solid #f93d4c;
+}
+
+/* 4. 下載前說明文字對齊設定 */
+.illustrate p {
+    padding-left: 28px; /* 向右縮排 28px，完美齊平驚嘆號後面的文字 */
+    line-height: 1.6;   /* 增加行距，讓說明更好閱讀 */
+    margin-top: 1px;    /* 與標題拉開距離 */
+    margin-bottom: 0;
+}
+
+/* 5. 按鈕群組與基礎設定 */
+.btn-group {
+    display: flex;
+    flex-direction: column;    
+    gap: 12px;
+}
+
+.btn {
+    display: block;          /* 填滿寬度 */
+    padding: 12px 20px;      /* 按鈕厚度 */
+    border-radius: 6px;      /* 圓角 */
+    text-decoration: none;   /* 去除超連結底線 */
+    font-weight: bold;       /* 粗體字 */
+    text-align: center;      /* 文字置中 */
+    transition: 0.2s;        /* 懸停動畫 */
+}
+
+/* 6. 按鈕顏色獨立設定 */
+.download-btn {
+    background-color: #ff4757; /* 下載按鈕紅色 */
+    color: white;
+}
+.download-btn:hover {
+    background-color: #ff6b81; /* 懸停亮紅 */
+}
+
+.safe-btn {
+    background-color: #02C874; /* 防毒按鈕翡翠綠 */
+    color: white;
+}
+.safe-btn:hover {
+    background-color: #7bed9f; /* 懸停亮綠 */
+}
+
+/* 7. 頁尾設定 */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #666666;
+    margin-top: 30px;
+}
